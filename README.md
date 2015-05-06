@@ -1,3 +1,11 @@
+- Citing superpose3D
+
+If you find this software useful, please cite the following paper
+	
+	Gherardini PF, Ausiello G, Helmer-Citterich M
+	Superpose3D: a local structural comparison program that allows for user-defined structure representations.
+	PLoS One. 2010 Aug 5;5(8):e11988. doi: 10.1371/journal.pone.0011988.
+
 - Installation
 
 In order to compile superpose from sources you need CMake. CMake is a free and
