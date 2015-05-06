@@ -1,0 +1,38 @@
+mode atom
+rmsd_threshold 0.7
+pdb_res_dict pdb_res_dict.txt
+
+
+def ALA=O:acc_O;N:don_N;C:pi_C;CB:ali
+def ARG=O:acc_O;N:don_N;C:pi_C;avg(CB,CG,CD):ali;NE:don1;NH1:don2;NH2:don3
+def ASN=O:acc_O;N:don_N;C:pi_C;OD1:acc;ND2:don
+def ASP=O:acc_O;N:don_N;C:pi_C;OD1:acc1;OD2:acc2
+def CYS=O:acc_O;N:don_N;C:pi_C;avg(CB,SG):ali
+def GLN=O:acc_O;N:don_N;C:pi_C;OE1:acc;NE2:don
+def GLU=O:acc_O;N:don_N;C:pi_C;OE1:acc1;OE2:acc2
+def HIS=O:acc_O;N:don_N;C:pi_C;avg(CG,ND1,CD2,CE1,NE2):pi;NE1:DONACC1;NE2:DONACC2
+def ILE=O:acc_O;N:don_N;C:pi_C;avg(CB,CG1,CG2,CD1):ali
+def LEU=O:acc_O;N:don_N;C:pi_C;avg(CB,CG,CD1,CD2):ali
+def LYS=O:acc_O;N:don_N;C:pi_C;avg(CB,CG,CD,CE):ali;NZ:don
+def MET=O:acc_O;N:don_N;C:pi_C;avg(CB,CG,SD,CE):ali
+def PHE=O:acc_O;N:don_N;C:pi_C;avg(CG,CD1,CD2,CE1,CE2,CZ):pi
+def PRO=O:acc_O;N:don_N;C:pi_C;avg(CB,CG,CD):ali
+def SER=O:acc_O;N:don_N;C:pi_C;OG:DONACC
+def THR=O:acc_O;N:don_N;C:pi_C;CG2:ali;OG1:DONACC
+def TRP=O:acc_O;N:don_N;C:pi_C;avg(CD,CD1,CD2,NE1,CE2,CE3):pi;avg(CZ1,CZ3,CH,NE1):don
+def TYR=O:acc_O;N:don_N;C:pi_C;avg(CB,CD1,CD2,CE1,CZ):pi;OH:DONACC
+def VAL=O:acc_O;N:don_N;C:pi_C;avg(CB,CG1,CG2):ali
+def *=O:acc_O;N:don_N;C:pi_C
+
+
+
+equiv PRO.acc_O=SER.acc_O
+
+equiv *.\don=*.\don=*.\DONACC
+equiv *.\ali=*.\ali
+equiv *.\acc=*.\acc=*.\DONACC
+equiv *.\DONACC=*.\DONACC
+equiv *.\pi=*.\pi
+
+
+

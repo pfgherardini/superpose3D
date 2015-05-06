@@ -1,0 +1,38 @@
+mode res
+pdb_res_dict pdb_res_dict.txt
+
+def GLU=avg(OE1,OE2,CG):acidic
+def ASP=avg(OD1,OD2,CB):acidic
+def SER=avg(OG,CB):O
+def TYR=avg(CD1,CD2,OH):O
+def THR=avg(OG1,CB,CG2):O
+def ARG=avg(NH1,NH2,NE):N
+def LYS=avg(CD,NZ):N
+def CYS=avg(SG,CB):S
+def PHE=avg(CG,CE1,CE2):aro
+def TRP=avg(CD1,CE3,CZ2):aro
+def HIS=avg(CG,ND1,NE2):aro
+def ASN=avg(OD1,ND2,CB):amide
+def GLN=avg(OE1,NE2,CG):amide
+def GLY=CA
+def *=CA
+
+equiv GLU=GLU=ASP
+equiv ASP=ASP
+equiv SER=SER
+equiv TYR=TYR
+equiv THR=THR
+equiv ARG=ARG
+equiv LYS=LYS
+equiv CYS=CYS
+equiv PHE=PHE
+equiv TRP=TRP
+equiv HIS=HIS
+equiv ASN=ASN=GLN
+equiv GLN=GLN
+equiv GLY=GLY
+
+
+
+
+

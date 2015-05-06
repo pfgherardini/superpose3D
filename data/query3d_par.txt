@@ -1,0 +1,31 @@
+mode res
+pdb_res_dict pdb_res_dict.txt
+rmsd_threshold 0.7
+max_longest_matches 5
+
+
+def *=CA;avg(side_chain):bar
+
+equiv ALA=ALA;SER
+equiv ARG=ARG;GLN;LYS
+equiv ASN=ASN;ASP;HIS;SER
+equiv ASP=ASN;ASP;GLU
+equiv CYS=CYS
+equiv GLN=GLN;ARG;GLU;LYS
+equiv GLU=GLU;ASP;GLN;LYS
+equiv GLY=GLY
+equiv HIS=HIS;TYR;ASN
+equiv ILE=ILE;LEU;MET;VAL
+equiv LEU=LEU;ILE;MET;VAL
+equiv LYS=LYS;ARG;GLN;GLU
+equiv MET=MET;ILE;LEU;VAL
+equiv PHE=PHE;TRP;TYR
+equiv PRO=PRO
+equiv SER=SER;ALA;ASN;THR
+equiv THR=THR;SER
+equiv TRP=TRP;PHE;TYR
+equiv TYR=TYR;HIS;PHE;TRP
+equiv VAL=VAL;ILE;LEU;MET
+
+
+
